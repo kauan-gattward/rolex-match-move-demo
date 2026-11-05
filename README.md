@@ -4,6 +4,8 @@ Peça de portfólio para apresentações de marca. **Não é um site da Rolex e 
 
 A transição **Match & Move** da Canva — os mesmos elementos indo de um quadro ao outro — recriada como scroll num telemóvel. Não é um corte, uma máscara nem um morph: coroa, palavra e mostrador são os mesmos nós e apenas mudam de lugar, escala e uma leve rotação.
 
+A foto do relógio (`assets/watch.png`, Oyster Perpetual em aço e ouro, mostrador verde) foi gerada no Canva, com o fundo removido. O scroll continua interativo — a página não é um export estático dos slides. **Demo não afiliada à Rolex SA.**
+
 ## O que o scroll faz
 
 Dois quadros, presos no ecrã enquanto a página rola (~230% da altura). A curva é `power2.inOut`, com um pequeno atraso de ~0,55s para o gesto parecer a transição original de meio segundo.
