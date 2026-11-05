@@ -21,6 +21,8 @@
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
   --phone-w: 400px;
   --ease: cubic-bezier(0.45, 0, 0.2, 1);
+  /* Cropped Canva photo, bracelet hanging. Width / height. */
+  --watch-ar: 739 / 1146;
 }
 
 *,
@@ -214,16 +216,16 @@ body::before {
   margin: 1.1cqh 0 0;
 }
 
-/* Macro crop: top of the case fills the lower frame; the rest falls off-canvas.
-   100cqh - 118cqw parks the dial's center on the bottom edge. The px floor
-   keeps the lugs from covering the gold label on shorter stages. */
+/* Macro crop of the photo: the slot is the full portrait, scaled so only the
+   upper case (dial) sits in the lower frame. The stage clips the bracelet. */
 .layout-a .watch-slot {
   position: absolute;
   z-index: 2;
-  width: 198%;
-  left: -49%;
-  top: max(278px, calc(100cqh - 142cqw));
-  aspect-ratio: 220 / 278;
+  width: 188%;
+  left: -44%;
+  top: max(252px, 28cqh);
+  aspect-ratio: var(--watch-ar);
+  overflow: hidden;
 }
 
 .layout-a .oyster-slot {
@@ -325,8 +327,9 @@ body::before {
 .layout-b .watch-slot {
   position: relative;
   z-index: 3;
-  width: 72%;
-  aspect-ratio: 220 / 278;
+  width: 62%;
+  aspect-ratio: var(--watch-ar);
+  overflow: hidden;
 }
 
 .layout-b .glow-slot {
@@ -471,22 +474,21 @@ body::before {
 /* ---------- shared graphics ---------- */
 
 .crown-slot svg,
-.crown svg,
-.watch-slot svg,
-.watch svg {
+.crown svg {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.crown-slot svg,
-.crown svg {
   filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.32));
 }
 
-.watch-slot svg,
-.watch svg {
-  filter: drop-shadow(0 22px 28px rgba(0, 0, 0, 0.38));
+.watch-slot img,
+.watch img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.42));
 }
 
 .glow,
@@ -585,7 +587,12 @@ body::before {
 .mm-layer .type-rolex { z-index: 6; }
 .mm-layer .sub,
 .mm-layer .since { z-index: 6; }
-.mm-layer .watch { width: 280px; aspect-ratio: 220 / 278; z-index: 3; }
+.mm-layer .watch {
+  width: 320px;
+  aspect-ratio: var(--watch-ar);
+  overflow: hidden;
+  z-index: 3;
+}
 .mm-layer .type-oyster { z-index: 1; }
 .mm-layer .glow { width: 360px; height: 360px; z-index: 0; }
 .mm-layer .hint,
