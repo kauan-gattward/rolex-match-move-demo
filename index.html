@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#043524">
+  <title>Match &amp; Move · Rolex (demo)</title>
+  <meta name="description" content="Demonstração de portfólio: a transição Match &amp; Move da Canva recriada como scroll. Não afiliado à Rolex SA.">
+  <meta property="og:title" content="Match &amp; Move · Rolex (demo)">
+  <meta property="og:description" content="Elementos idênticos viajam entre dois quadros enquanto você rola. Demonstração não afiliada à Rolex SA.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23006039'/%3E%3Cpath fill='%23E0C27A' d='M6 22 L9 14 L12 18 L16 9 L20 18 L23 14 L26 22 Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="sr-only">Rolex — demonstração Match &amp; Move</h1>
+  <p class="sr-only">Peça de portfólio, não afiliada à Rolex SA. No início, a coroa e a palavra ROLEX aparecem grandes sobre um mostrador em close. Ao rolar, os mesmos elementos se afastam: o relógio inteiro fica no centro, a palavra OYSTER cresce ao fundo e entra a frase “A precisão que permanece”.</p>
+
+  <aside class="chrome chrome-left">
+    <p class="kicker">Exemplo de portfólio</p>
+    <p class="chrome-title">Match &amp; Move</p>
+    <p>A transição da Canva — os mesmos elementos, de um quadro ao outro — recriada como um zoom-out no scroll.</p>
+  </aside>
+  <aside class="chrome chrome-right">
+    <p class="kicker">Como ler</p>
+    <p>Role a página. A coroa, o nome e o mostrador não são trocados: eles viajam.</p>
+    <p class="chrome-note">Demo · não afiliado à Rolex SA</p>
+  </aside>
+
+  <main class="shell" id="shell">
+    <section class="stage" id="stage" aria-hidden="true">
+      <!-- STATE A: label enorme + macro do topo do relógio -->
+      <div class="layout layout-a" id="layoutA">
+        <div class="glow-slot" data-slot="glow"></div>
+        <div class="brand">
+          <div class="crown-slot" data-slot="crown" data-mount="crown"></div>
+          <p class="type-rolex" data-slot="word">ROLEX</p>
+        </div>
+        <p class="sub" data-slot="sub">A Coroa de Ouro</p>
+        <p class="since" data-slot="since">Desde 1905</p>
+
+        <p class="type-oyster oyster-slot" data-slot="oyster">OYSTER</p>
+        <div class="watch-slot" data-slot="watch" data-mount="watch"></div>
+
+        <i class="acc acc-ring a1" data-slot="a1"></i>
+        <i class="acc acc-dot a2" data-slot="a2"></i>
+        <i class="acc acc-link a3" data-slot="a3"></i>
+        <i class="acc acc-ring-thin a4" data-slot="a4"></i>
+        <i class="acc acc-dot a5" data-slot="a5"></i>
+        <i class="acc acc-spark a6" data-slot="a6"></i>
+        <i class="acc acc-link a7" data-slot="a7"></i>
+
+        <p class="hint" data-slot="hint">
+          <span>Role pra descobrir</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </p>
+        <p class="tag" data-slot="tag"><span class="rule"></span>A precisão que permanece</p>
+        <p class="legal" data-slot="legal">Demo · não afiliado à Rolex SA</p>
+      </div>
+
+      <!-- STATE B: cartaz completo — herói no centro, palavra enorme, órbita -->
+      <div class="layout layout-b" id="layoutB">
+        <div class="glow-slot" data-slot="glow"></div>
+        <div class="brand">
+          <div class="crown-slot" data-slot="crown" data-mount="crown"></div>
+          <p class="type-rolex" data-slot="word">ROLEX</p>
+        </div>
+        <div class="hero">
+          <div class="poster">
+            <p class="type-oyster oyster-slot" data-slot="oyster">OYSTER</p>
+            <div class="watch-slot" data-slot="watch" data-mount="watch"></div>
+            <p class="tag" data-slot="tag"><span class="rule"></span>A precisão que permanece</p>
+          </div>
+        </div>
+
+        <i class="acc acc-ring a1" data-slot="a1"></i>
+        <i class="acc acc-dot a2" data-slot="a2"></i>
+        <i class="acc acc-link a3" data-slot="a3"></i>
+        <i class="acc acc-ring-thin a4" data-slot="a4"></i>
+        <i class="acc acc-dot a5" data-slot="a5"></i>
+        <i class="acc acc-spark a6" data-slot="a6"></i>
+        <i class="acc acc-link a7" data-slot="a7"></i>
+
+        <p class="sub" data-slot="sub">A Coroa de Ouro</p>
+        <p class="since" data-slot="since">Desde 1905</p>
+        <p class="hint" data-slot="hint">
+          <span>Role pra descobrir</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </p>
+        <p class="legal" data-slot="legal">Demo · não afiliado à Rolex SA</p>
+      </div>
+
+      <!-- Camada que realmente se move. Um nó por elemento, do quadro A ao B. -->
+      <div class="mm-layer" id="mm">
+        <div class="glow mover" data-mm="glow" data-op-a="1" data-op-b="0.7"></div>
+        <p class="type-oyster mover" data-mm="oyster" data-op-a="0" data-op-b="1">OYSTER</p>
+
+        <i class="acc acc-ring a1 mover" data-mm="a1" data-rot-a="-24" data-rot-b="14" data-op-a="0.7" data-op-b="1"></i>
+        <i class="acc acc-dot a2 mover" data-mm="a2" data-rot-a="18" data-rot-b="-10" data-op-a="0.85" data-op-b="1"></i>
+        <i class="acc acc-link a3 mover" data-mm="a3" data-rot-a="-36" data-rot-b="18" data-op-a="0.75" data-op-b="1"></i>
+        <i class="acc acc-ring-thin a4 mover" data-mm="a4" data-rot-a="28" data-rot-b="-16" data-op-a="0.7" data-op-b="1"></i>
+        <i class="acc acc-dot a5 mover" data-mm="a5" data-rot-a="8" data-rot-b="22" data-op-a="0.8" data-op-b="1"></i>
+        <i class="acc acc-spark a6 mover" data-mm="a6" data-rot-a="-16" data-rot-b="32" data-op-a="0.65" data-op-b="1"></i>
+        <i class="acc acc-link a7 mover" data-mm="a7" data-rot-a="20" data-rot-b="-24" data-op-a="0.75" data-op-b="1"></i>
+
+        <div class="watch mover" data-mm="watch" data-mount="watch" data-rot-a="2.5" data-rot-b="0"></div>
+        <div class="crown mover" data-mm="crown" data-mount="crown"></div>
+        <p class="type-rolex mover" data-mm="word">ROLEX</p>
+        <p class="sub mover" data-mm="sub" data-fade="out">A Coroa de Ouro</p>
+        <p class="since mover" data-mm="since" data-fade="out">Desde 1905</p>
+        <p class="tag mover" data-mm="tag" data-fade="in"><span class="rule"></span>A precisão que permanece</p>
+        <p class="legal mover" data-mm="legal" data-fade="in">Demo · não afiliado à Rolex SA</p>
+        <p class="hint mover" data-mm="hint" data-fade="out">
+          <span>Role pra descobrir</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </p>
+      </div>
+
+      <div class="vignette"></div>
+      <div class="grain"></div>
+      <div class="rail" aria-hidden="true"><span></span></div>
+    </section>
+  </main>
+
+  <template id="tpl-crown">
+    <svg viewBox="0 0 120 96" aria-hidden="true">
+      <path fill="#8A6424" d="M6 64h108v8.5c-18 10-90 10-108 0V64z"/>
+      <path fill="#E0C27A" d="M4 64 16 36 28 50 40 24 50 42 60 8 70 42 80 24 92 50 104 36 116 64Z"/>
+      <path fill="#F8EFD4" d="M4 64 16 36 28 50 40 24 50 42 60 8V64H4z" opacity="0.28"/>
+      <path fill="#F8EFD4" d="M10 64h100v3H10z"/>
+      <circle cx="60" cy="14" r="6.5" fill="#F8EFD4" stroke="#A37E2C" stroke-width="1"/>
+      <circle cx="60" cy="14" r="2.4" fill="#C4A35A"/>
+      <circle cx="16" cy="36" r="3.3" fill="#F8EFD4"/>
+      <circle cx="40" cy="26" r="2.8" fill="#F8EFD4"/>
+      <circle cx="80" cy="26" r="2.8" fill="#E8D5A3"/>
+      <circle cx="104" cy="36" r="3.3" fill="#C4A35A"/>
+    </svg>
+  </template>
+
+  <template id="tpl-watch">
+    <svg viewBox="0 0 220 278" aria-hidden="true">
+      <defs>
+        <radialGradient id="dial" cx="40%" cy="36%" r="72%">
+          <stop offset="0%" stop-color="#2a9a5c"/>
+          <stop offset="38%" stop-color="#0d5c38"/>
+          <stop offset="100%" stop-color="#02140e"/>
+        </radialGradient>
+        <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#F8EFD4"/>
+          <stop offset="32%" stop-color="#E7D7A4"/>
+          <stop offset="58%" stop-color="#C4A35A"/>
+          <stop offset="100%" stop-color="#7A5A22"/>
+        </linearGradient>
+        <linearGradient id="metalV" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF6DE"/>
+          <stop offset="45%" stop-color="#D4B56A"/>
+          <stop offset="100%" stop-color="#6E501C"/>
+        </linearGradient>
+      </defs>
+
+      <path fill="url(#metalV)" d="M70 58c0-18 6-34 18-40h16l6 40H70z"/>
+      <path fill="url(#metalV)" d="M150 58l6-40h16c12 6 18 22 18 40h-40z"/>
+      <path fill="url(#metalV)" d="M70 222h40l-6 40H88c-12-6-18-22-18-40z"/>
+      <path fill="url(#metalV)" d="M150 222c0 18-6 34-18 40h-16l-6-40h40z"/>
+      <g fill="none" stroke="#5c4314" stroke-width="0.7" opacity="0.55">
+        <path d="M78 30h26M80 40h22M156 30h26M158 40h22M78 242h26M80 252h22M156 242h26M158 252h22"/>
+      </g>
+
+      <circle cx="110" cy="140" r="104" fill="url(#metal)"/>
+      <circle cx="110" cy="140" r="100.5" fill="#8A6428"/>
+      <g color="#F8EFD4">
+        <line x1="110" y1="52.8" x2="110" y2="39.8" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="116.31" y1="49.82" x2="116.99" y2="40.04" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="122.14" y1="53.65" x2="123.95" y2="40.78" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="128.8" y1="51.58" x2="130.83" y2="41.99" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="134.04" y1="56.18" x2="137.62" y2="43.68" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="140.92" y1="55.05" x2="144.27" y2="45.84" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="145.47" y1="60.34" x2="150.76" y2="48.46" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="152.44" y1="60.18" x2="157.04" y2="51.53" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="156.21" y1="66.05" x2="163.1" y2="55.03" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="163.14" y1="66.86" x2="168.9" y2="58.94" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="166.05" y1="73.2" x2="174.41" y2="63.24" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="172.8" y1="74.97" x2="179.6" y2="67.92" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="174.8" y1="81.65" x2="184.46" y2="72.95" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="181.24" y1="84.34" x2="188.96" y2="78.31" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="182.29" y1="91.24" x2="193.07" y2="83.97" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="188.29" y1="94.8" x2="196.78" y2="89.9" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="188.37" y1="101.77" x2="200.06" y2="96.08" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="193.82" y1="106.14" x2="202.9" y2="102.46" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="192.93" y1="113.05" x2="205.3" y2="109.04" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="197.71" y1="118.13" x2="207.22" y2="115.76" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="195.88" y1="124.86" x2="208.68" y2="122.6" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="199.9" y1="130.55" x2="209.65" y2="129.53" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="197.15" y1="136.96" x2="210.14" y2="136.5" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="200.34" y1="143.15" x2="210.14" y2="143.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="196.72" y1="149.11" x2="209.65" y2="150.47" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="199.03" y1="155.7" x2="208.68" y2="157.4" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="194.61" y1="161.1" x2="207.22" y2="164.24" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="195.98" y1="167.94" x2="205.3" y2="170.96" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="190.85" y1="172.67" x2="202.9" y2="177.54" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="191.25" y1="179.63" x2="200.06" y2="183.92" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="185.52" y1="183.6" x2="196.78" y2="190.1" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="184.94" y1="190.55" x2="193.07" y2="196.03" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="178.71" y1="193.69" x2="188.96" y2="201.69" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="177.18" y1="200.49" x2="184.46" y2="207.05" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="170.57" y1="202.73" x2="179.6" y2="212.08" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="168.11" y1="209.25" x2="174.41" y2="216.76" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="161.25" y1="210.55" x2="168.9" y2="221.06" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="157.9" y1="216.66" x2="163.1" y2="224.97" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="150.94" y1="216.99" x2="157.04" y2="228.47" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="146.77" y1="222.58" x2="150.76" y2="231.54" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="139.82" y1="221.94" x2="144.27" y2="234.16" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="134.92" y1="226.9" x2="137.62" y2="236.32" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="128.13" y1="225.29" x2="130.83" y2="238.01" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="122.58" y1="229.52" x2="123.95" y2="239.22" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="116.08" y1="226.99" x2="116.99" y2="239.96" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="110" y1="230.4" x2="110" y2="240.2" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="103.92" y1="226.99" x2="103.01" y2="239.96" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="97.42" y1="229.52" x2="96.05" y2="239.22" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="91.87" y1="225.29" x2="89.17" y2="238.01" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="85.08" y1="226.9" x2="82.38" y2="236.32" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="80.18" y1="221.94" x2="75.73" y2="234.16" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="73.23" y1="222.58" x2="69.24" y2="231.54" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="69.06" y1="216.99" x2="62.96" y2="228.47" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="62.1" y1="216.66" x2="56.9" y2="224.97" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="58.75" y1="210.55" x2="51.1" y2="221.06" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="51.89" y1="209.25" x2="45.59" y2="216.76" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="49.43" y1="202.73" x2="40.4" y2="212.08" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="42.82" y1="200.49" x2="35.54" y2="207.05" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="41.29" y1="193.69" x2="31.04" y2="201.69" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="35.06" y1="190.55" x2="26.93" y2="196.03" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="34.48" y1="183.6" x2="23.22" y2="190.1" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="28.75" y1="179.63" x2="19.94" y2="183.92" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="29.15" y1="172.67" x2="17.1" y2="177.54" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="24.02" y1="167.94" x2="14.7" y2="170.96" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="25.39" y1="161.1" x2="12.78" y2="164.24" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="20.97" y1="155.7" x2="11.32" y2="157.4" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="23.28" y1="149.11" x2="10.35" y2="150.47" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="19.66" y1="143.15" x2="9.86" y2="143.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="22.85" y1="136.96" x2="9.86" y2="136.5" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="20.1" y1="130.55" x2="10.35" y2="129.53" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="24.12" y1="124.86" x2="11.32" y2="122.6" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="22.29" y1="118.13" x2="12.78" y2="115.76" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="27.07" y1="113.05" x2="14.7" y2="109.04" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="26.18" y1="106.14" x2="17.1" y2="102.46" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="31.63" y1="101.77" x2="19.94" y2="96.08" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="31.71" y1="94.8" x2="23.22" y2="89.9" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="37.71" y1="91.24" x2="26.93" y2="83.97" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="38.76" y1="84.34" x2="31.04" y2="78.31" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="45.2" y1="81.65" x2="35.54" y2="72.95" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="47.2" y1="74.97" x2="40.4" y2="67.92" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="53.95" y1="73.2" x2="45.59" y2="63.24" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="56.86" y1="66.86" x2="51.1" y2="58.94" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="63.79" y1="66.05" x2="56.9" y2="55.03" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="67.56" y1="60.18" x2="62.96" y2="51.53" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="74.53" y1="60.34" x2="69.24" y2="48.46" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="79.08" y1="55.05" x2="75.73" y2="45.84" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="85.96" y1="56.18" x2="82.38" y2="43.68" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="91.2" y1="51.58" x2="89.17" y2="41.99" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/><line x1="97.86" y1="53.65" x2="96.05" y2="40.78" stroke="currentColor" stroke-width="1.55" stroke-linecap="butt" opacity="0.62"/><line x1="103.69" y1="49.82" x2="103.01" y2="40.04" stroke="currentColor" stroke-width="0.75" stroke-linecap="butt" opacity="0.32"/>
+      </g>
+      <circle cx="110" cy="140" r="85.2" fill="url(#dial)"/>
+      <circle cx="110" cy="140" r="85.2" fill="none" stroke="rgba(0,0,0,0.55)" stroke-width="2.4"/>
+      <circle cx="110" cy="140" r="78" fill="none" stroke="rgba(243,230,192,0.28)" stroke-width="1"/>
+      <g color="#F6E7C1">
+        <line x1="117.06" y1="72.87" x2="117.67" y2="67" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="124.03" y1="73.98" x2="125.26" y2="68.2" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="130.86" y1="75.8" x2="132.68" y2="70.19" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="137.45" y1="78.34" x2="139.85" y2="72.95" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="149.68" y1="85.39" x2="153.14" y2="80.62" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="155.17" y1="89.84" x2="159.11" y2="85.45" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="160.16" y1="94.83" x2="164.55" y2="90.89" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="164.61" y1="100.32" x2="169.38" y2="96.86" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="171.66" y1="112.55" x2="177.05" y2="110.15" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="174.2" y1="119.14" x2="179.81" y2="117.32" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="176.02" y1="125.97" x2="181.8" y2="124.74" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="177.13" y1="132.94" x2="183" y2="132.33" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="177.13" y1="147.06" x2="183" y2="147.67" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="176.02" y1="154.03" x2="181.8" y2="155.26" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="174.2" y1="160.86" x2="179.81" y2="162.68" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="171.66" y1="167.45" x2="177.05" y2="169.85" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="164.61" y1="179.68" x2="169.38" y2="183.14" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="160.16" y1="185.17" x2="164.55" y2="189.11" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="155.17" y1="190.16" x2="159.11" y2="194.55" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="149.68" y1="194.61" x2="153.14" y2="199.38" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="137.45" y1="201.66" x2="139.85" y2="207.05" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="130.86" y1="204.2" x2="132.68" y2="209.81" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="124.03" y1="206.02" x2="125.26" y2="211.8" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="117.06" y1="207.13" x2="117.67" y2="213" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="102.94" y1="207.13" x2="102.33" y2="213" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="95.97" y1="206.02" x2="94.74" y2="211.8" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="89.14" y1="204.2" x2="87.32" y2="209.81" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="82.55" y1="201.66" x2="80.15" y2="207.05" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="70.32" y1="194.61" x2="66.86" y2="199.38" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="64.83" y1="190.16" x2="60.89" y2="194.55" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="59.84" y1="185.17" x2="55.45" y2="189.11" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="55.39" y1="179.68" x2="50.62" y2="183.14" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="48.34" y1="167.45" x2="42.95" y2="169.85" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="45.8" y1="160.86" x2="40.19" y2="162.68" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="43.98" y1="154.03" x2="38.2" y2="155.26" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="42.87" y1="147.06" x2="37" y2="147.67" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="42.87" y1="132.94" x2="37" y2="132.33" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="43.98" y1="125.97" x2="38.2" y2="124.74" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="45.8" y1="119.14" x2="40.19" y2="117.32" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="48.34" y1="112.55" x2="42.95" y2="110.15" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="55.39" y1="100.32" x2="50.62" y2="96.86" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="59.84" y1="94.83" x2="55.45" y2="90.89" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="64.83" y1="89.84" x2="60.89" y2="85.45" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="70.32" y1="85.39" x2="66.86" y2="80.62" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="82.55" y1="78.34" x2="80.15" y2="72.95" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="89.14" y1="75.8" x2="87.32" y2="70.19" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="95.97" y1="73.98" x2="94.74" y2="68.2" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="102.94" y1="72.87" x2="102.33" y2="67" stroke="currentColor" stroke-width="0.8" stroke-linecap="butt" opacity="0.5"/><line x1="110" y1="83.5" x2="110" y2="66.4" stroke="currentColor" stroke-width="3.6" stroke-linecap="butt" opacity="1"/><line x1="140.75" y1="86.74" x2="146.8" y2="76.26" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="163.26" y1="109.25" x2="173.74" y2="103.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="166.5" y1="140" x2="183.6" y2="140" stroke="currentColor" stroke-width="3.6" stroke-linecap="butt" opacity="1"/><line x1="163.26" y1="170.75" x2="173.74" y2="176.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="140.75" y1="193.26" x2="146.8" y2="203.74" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="110" y1="196.5" x2="110" y2="213.6" stroke="currentColor" stroke-width="3.6" stroke-linecap="butt" opacity="1"/><line x1="79.25" y1="193.26" x2="73.2" y2="203.74" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="56.74" y1="170.75" x2="46.26" y2="176.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="53.5" y1="140" x2="36.4" y2="140" stroke="currentColor" stroke-width="3.6" stroke-linecap="butt" opacity="1"/><line x1="56.74" y1="109.25" x2="46.26" y2="103.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/><line x1="79.25" y1="86.74" x2="73.2" y2="76.26" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" opacity="1"/>
+      </g>
+      <ellipse cx="110" cy="104" rx="50" ry="24" fill="#fff" opacity="0.1"/>
+      <ellipse cx="90" cy="92" rx="16" ry="7" fill="#fff" opacity="0.16"/>
+
+      <polygon points="110,86 113.6,140 110,152 106.4,140" fill="#F3D78A" transform="rotate(-58 110 140)"/>
+      <polygon points="110,64 112.4,140 110,156 107.6,140" fill="#F8E7B8" transform="rotate(60 110 140)"/>
+      <circle cx="110" cy="140" r="7" fill="#F3E6C2"/>
+      <circle cx="110" cy="140" r="3.1" fill="#5c4316"/>
+      <circle cx="110" cy="140" r="1.3" fill="#FFF6DE"/>
+
+      <g fill="url(#metalV)">
+        <rect x="206" y="118" width="11" height="10" rx="2"/>
+        <rect x="208" y="130" width="11" height="8" rx="1.5"/>
+        <rect x="206" y="140" width="11" height="10" rx="2"/>
+      </g>
+      <circle cx="110" cy="140" r="103" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+    </svg>
+  </template>
+
+  <script>
+    (function () {
+      function mount(tplId, name) {
+        var tpl = document.getElementById(tplId);
+        if (!tpl) return;
+        var i = 0;
+        document.querySelectorAll("[data-mount='" + name + "']").forEach(function (host) {
+          if (host.querySelector("svg")) return;
+          var holder = document.createElement("div");
+          holder.appendChild(tpl.content.cloneNode(true));
+          var html = holder.innerHTML;
+          var ids = [];
+          html.replace(/\sid="([^"]+)"/g, function (_, id) { ids.push(id); return _; });
+          ids.sort(function (a, b) { return b.length - a.length; });
+          var suffix = name + i++;
+          ids.forEach(function (id) {
+            html = html.split('id="' + id + '"').join('id="' + id + "-" + suffix + '"');
+            html = html.split("url(#" + id + ")").join("url(#" + id + "-" + suffix + ")");
+          });
+          host.innerHTML = html;
+        });
+      }
+      mount("tpl-crown", "crown");
+      mount("tpl-watch", "watch");
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
